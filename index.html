@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <div class="contenedor">
+        <iframe class="contenido-principal" src="./template/presentacion.html" frameborder="0"></iframe>
+        <div class="barra-lateral">
+            <ul>
+                <li data-src="./template/presentacion.html">Lista 1</li>
+                <li data-src="./template/otro.html">Lista 2</li>
+                <li data-src="./template/otro_mas.html">Lista 3</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

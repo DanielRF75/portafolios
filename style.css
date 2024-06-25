@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.contenido-principal {
+    flex: 1;
+    width: 85vw; /* Ajuste automático para dejar espacio para la barra lateral */
+    height: 100vh;
+}
+
+.barra-lateral {
+    background-color: rgb(112, 112, 112);
+    height: 100vh; /* Altura completa de la pantalla */
+    width: 15vw;   /* Ancho del 15% de la pantalla */
+    list-style: none;
+    padding-top: 5%;
+}
+
+.barra-lateral ul {
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.barra-lateral li {
+    padding: 15px;
+    cursor: pointer;
+    color: white; /* Color del texto de la lista */
+}
+
+.barra-lateral li:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+.barra-lateral li.selected {
+    background-color: #333; /* Color de fondo cuando está seleccionado */
+}
